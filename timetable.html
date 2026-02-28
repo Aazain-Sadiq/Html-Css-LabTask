@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BSCS-4C Timetable</title>
+    <title>BSCS Timetable</title>
     <style>
         body {
             font-family: Arial;
@@ -11,91 +10,138 @@
         }
 
         .container {
-            width: 70%;
-            margin: 40px auto;
+            width: 95%;
+            margin: 20px auto;
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px gray;
             text-align: center;
         }
 
         h1 {
-            color: #2c3e50;
+            margin-bottom: 15px;
         }
 
         table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            font-size: 13px;
+            text-align: center;
         }
 
         th {
-            background: #3498db;
-            color: white;
-            padding: 12px;
+            background: #dfe6e9;
         }
 
-        td {
-            padding: 12px;
+        .day {
+            font-size: 22px;
+            font-weight: bold;
         }
 
-        tr:nth-child(even) {
-            background: #f2f2f2;
+        .lab {
+            background: #f1f2f6;
         }
 
         td:hover {
-            background: #d6eaf8;
+            background: #dfe6e9;
         }
     </style>
 </head>
+
 <body>
 
 <div class="container">
-    <h1>Class Timetable</h1>
+    <h1>BSCS-IV-C (Shift-I)</h1>
 
     <table>
         <tr>
             <th>Day</th>
-            <th>9-10</th>
-            <th>10-11</th>
-            <th>11-12</th>
+            <th>07:45-08:25</th>
+            <th>08:25-09:05</th>
+            <th>09:05-09:45</th>
+            <th>09:45-10:25</th>
+            <th>10:25-11:05</th>
+            <th>11:05-11:45</th>
+            <th>11:45-12:25</th>
+            <th>12:25-01:05</th>
+            <th>01:05-01:45</th>
         </tr>
 
+        <!-- Monday -->
         <tr>
-            <td>Monday</td>
-            <td>OOP</td>
-            <td>DB</td>
-            <td>Math</td>
+            <td class="day">Mo</td>
+            <td></td>
+            <td>Civic Eng<br>C-201</td>
+            <td>Software Eng<br>C-301</td>
+            <td>COAL<br>C-302</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
 
+        <!-- Tuesday -->
         <tr>
-            <td>Tuesday</td>
-            <td>CN</td>
-            <td>OOP</td>
-            <td>DB</td>
+            <td class="day">Tu</td>
+            <td>Civic Eng<br>C-303</td>
+            <td></td>
+            <td>CN<br>C-303</td>
+            <td></td>
+            <td>Visual Prog<br>C-304</td>
+            <td colspan="4" class="lab">
+                Visual Programming Lab<br>
+                Lab 12 C Block
+            </td>
         </tr>
 
+        <!-- Wednesday -->
         <tr>
-            <td>Wednesday</td>
-            <td>Math</td>
-            <td>CN</td>
-            <td>OOP</td>
+            <td class="day">We</td>
+            <td></td>
+            <td>Math<br>C-305</td>
+            <td>Software Eng<br>C-304</td>
+            <td>Visual Prog<br>C-206</td>
+            <td colspan="5" class="lab">
+                CN Lab<br>
+                Lab 12 C Block
+            </td>
         </tr>
 
+        <!-- Thursday -->
         <tr>
-            <td>Thursday</td>
-            <td>DB</td>
-            <td>Math</td>
-            <td>CN</td>
+            <td class="day">Th</td>
+            <td></td>
+            <td>Math<br>C-301</td>
+            <td>AI<br>C-301</td>
+            <td>COAL<br>C-205</td>
+            <td>Software Eng<br>C-306</td>
+            <td colspan="4" class="lab">
+                COAL Lab<br>
+                Lab 12 C Block
+            </td>
         </tr>
 
+        <!-- Friday -->
         <tr>
-            <td>Friday</td>
-            <td>OOP</td>
-            <td>CN</td>
-            <td>Lab</td>
+            <td class="day">Fr</td>
+            <td></td>
+            <td></td>
+            <td>Math<br>C-202</td>
+            <td></td>
+            <td>CN<br>C-303</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
+
     </table>
 </div>
 
